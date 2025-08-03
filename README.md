@@ -78,9 +78,7 @@ Seu desafio é:
 - Entender o motivo.
 
 ##
-### 🚀 Como Usar
-
-1. Clone este repositório:
+### ⚙️ Clone este repositório:
 
 ```bash
 git clone https://github.com/seuusuario/flashbot.git
