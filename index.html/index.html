@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/coffee.png" type="image/x-icon" />
+
+  <title>FlashBot Pessoal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fundo com estrelas -->
+  <div class="star-background"></div>
+
+  <div id="chatbox">
+    <ul id="chat">
+      <li class="bot-message"><strong>FlashBot:</strong> Olá! Pergunte-me algo sobre mim.</li>
+    </ul>
+    <input type="text" id="user_input" placeholder="Digite sua pergunta..." />
+    <button onclick="processMessage()">Enviar</button>
+  </div>
+
+  <div id="feedback-container">
+    <p>Gostou do FlashBot? Envie seu feedback!</p>
+    <button onclick="window.open('https://www.instagram.com/marcus.xpl?igsh=MTdvejl4M2p0cDE0MQ%3D%3D&utm_source=qr', '_blank')">Instagram</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

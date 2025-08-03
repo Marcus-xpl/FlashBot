@@ -1,0 +1,212 @@
+
+/* ==================== */
+/* Estilo Geral - Corpo */
+/* ==================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* para o feedback ficar abaixo do chat */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==================== */
+/* Caixa do Chat        */
+/* ==================== */
+#chatbox {
+  background-color: #000;
+  border: 1px solid #727272;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(209, 207, 207, 0.2);
+  border-radius: 10px;
+  z-index: 1; /* Garante que fique acima do fundo animado */
+}
+
+/* ==================== */
+/* Área de Mensagens    */
+/* ==================== */
+#chatbox ul {
+  color: #fff;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #0aad10 #000;
+}
+
+#chatbox li {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  color: #11ca00;
+}
+
+.bot-message {
+  color: #eeeeee;
+}
+
+/* ==================== */
+/* Input e Botão        */
+/* ==================== */
+#chatbox input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+#chatbox button {
+  padding: 8px;
+  background-color: #009405;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#chatbox button:hover {
+  background-color: #007206;
+}
+
+/* ==================== */
+/* Container Feedback   */
+/* ==================== */
+#feedback-container {
+  margin-top: 15px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #727272;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(209, 207, 207, 0.2);
+  text-align: center;
+  color: #0aad10;
+  font-weight: bold;
+  z-index: 1;
+}
+
+#feedback-container p {
+  margin: 0 0 10px 0;
+}
+
+#feedback-container button {
+  background-color: #c72f62;
+  border: none;
+  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#feedback-container button:hover {
+  background-color:#b9194e;
+}
+
+/* ================= */
+/* RESPONSIVIDADE    */
+/* ================= */
+@media (max-width: 768px) {
+  #chatbox {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  #chatbox input {
+    width: 65%;
+  }
+
+  #chatbox button {
+    width: 30%;
+    margin-top: 5px;
+  }
+
+  #feedback-container {
+    max-width: 90%;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #chatbox {
+    padding: 10px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  #chatbox input,
+  #chatbox button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #feedback-container {
+    border-radius: 0;
+    padding: 10px;
+  }
+}
+
+/* ================= */
+/* ANIMAÇÕES SUAVES  */
+/* ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-message,
+.bot-message {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* ================= */
+/* ESTRELAS NO FUNDO */
+/* ================= */
+.star {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 5s linear forwards;
+  z-index: 0;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
