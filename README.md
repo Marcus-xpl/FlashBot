@@ -1,43 +1,50 @@
-# FlashBot - Chatbot Inteligente
 
-FlashBot é um chatbot simples que responde a perguntas em português e inglês com respostas dinâmicas e aleatórias. Ideal para projetos educativos e interativos.
+# 🤖 FlashBot - Chatbot Inteligente
 
-##
-Funcionalidades:
+FlashBot é um chatbot simples, leve e fácil de usar, desenvolvido para responder perguntas em **português** e **inglês** com frases aleatórias, tornando as conversas mais naturais e dinâmicas.
 
-- Detecta o idioma da pergunta (português ou inglês) por palavras-chave.
-- Responde com frases variadas para tornar a conversa mais natural.
-- Exibe as mensagens do usuário e do bot com estilos diferentes para melhor visualização.
+Com uma estrutura de código clara e modular, o FlashBot pode ser utilizado em **projetos educativos**, **atividades interativas**, **experimentos com JavaScript**, ou até mesmo como base para projetos maiores.
+
+O design visual é amigável, com um fundo animado de estrelas e um estilo de mensagens que diferencia o usuário do bot, facilitando a leitura e proporcionando uma experiência mais agradável.
+
+Além disso, o projeto inclui uma lista de perguntas suportadas e pode ser facilmente personalizado, permitindo a adição de novas perguntas, respostas e comportamentos de acordo com os objetivos do projeto.
+
+## 
+### ✨ Funcionalidades:
+
+- Detecta o idioma da pergunta (PT ou EN) por palavras-chave.
+- Respostas variadas e aleatórias, deixando a conversa mais natural.
+- Interface com mensagens separadas entre usuário e bot.
 - Fundo animado com efeito de estrelas.
-- Fácil de personalizar e expandir com novas perguntas e respostas.
+- Fácil de personalizar: adicione novas perguntas e respostas rapidamente.
 
 ##
-Perguntas Suportadas (Português):
+### 📌 Perguntas Suportadas (Português):
 
-- Qual e seu nome?  
-- Qual e a sua idade?  
-- Onde voce mora?  
+- Qual é seu nome?  
+- Qual é a sua idade?  
+- Onde você mora?  
 - Qual a sua comida favorita?  
-- Voce fala outras linguas?  
-- O que voce faz?  
-- Voce gosta de mim?  
-- Qual e o sentido da vida?  
-- Quais sao seus hobbies?  
-- Voce gosta de ler?  
-- Voce joga?  
-- Qual tipo de musica voce gosta?  
+- Você fala outras línguas?  
+- O que você faz?  
+- Você gosta de mim?  
+- Qual é o sentido da vida?  
+- Quais são seus hobbies?  
+- Você gosta de ler?  
+- Você joga?  
+- Qual tipo de música você gosta?  
 - Qual sua linguagem favorita?  
-- O que e programacao?  
+- O que é programação?  
 - Qual seu jogo favorito?  
-- Que tipo de jogo voce gosta?  
-- O que e logica na programacao?  
-- Para que serve a logica na programacao?  
-- Qual a diferenca entre logica e linguagem?  
-- A logica e dificil?  
-- Voce comete erros de codigo?  
+- Que tipo de jogo você gosta?  
+- O que é lógica na programação?  
+- Para que serve a lógica na programação?  
+- Qual a diferença entre lógica e linguagem?  
+- A lógica é difícil?  
+- Você comete erros de código?  
 
 ##
-Supported Questions (English):
+### 📌 Supported Questions (English):
 
 - What is your name?  
 - How old are you?  
@@ -60,11 +67,20 @@ Supported Questions (English):
 - What is the difference between logic and language?  
 - Is logic hard?  
 - Do you make coding mistakes?  
-  
+
 ##
-Como usar:
+### 🎯 Desafio:
+
+Este projeto contém **um pequeno erro proposital...**
+
+Seu desafio é:
+- Encontrar e corrigir o erro.
+- Entender o motivo.
+
+##
+### 🚀 Como Usar
 
 1. Clone este repositório:
-   
-   ```bash
-   git clone https://github.com/seuusuario/flashbot.git
+
+```bash
+git clone https://github.com/seuusuario/flashbot.git
